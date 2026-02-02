@@ -460,6 +460,15 @@ textarea {
     textarea {
         max-width: 100%;
     }
+
+    .logo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .entete{
+        flex-direction: column;
+    }
 }
 
 .footer{
