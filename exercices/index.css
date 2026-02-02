@@ -1,0 +1,493 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #f8fafc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.inou a{
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 80px;
+    color: #7241FF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inou a:hover{
+    border-radius: 10px;
+    border: 2px solid #7241FF;
+    padding: 8px 5px;
+}
+
+.entete a{
+    margin-left: 35px;
+    font-size: 16px;
+    color: #334155;
+    font-weight: 600;
+    gap: 15px;
+    line-height: 25.6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.entete a:hover{
+    border-radius: 10px;
+    border: 2px solid #7241FF;
+    color: #7241FF;
+    padding: 5px 3px;
+}
+
+.left{
+    margin-top: -20px;
+    text-align: center;
+    background-color: #7241FF;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left h1{
+    font-size: 48px;
+    color: white;
+    margin-bottom:25px;
+}
+
+.left p{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+
+.btn{
+padding: 18px 30px;
+background-color: white;
+color: #7241FF;
+border-radius: 30px;
+font-weight: bold;
+text-decoration: none;
+transition: 0.3s ease;
+}
+
+.btn:hover{
+transform: translateY(-5px);
+}
+
+
+/* section service */
+
+section{
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+h2{
+    font-size: 40px;
+    color: #1e293b;
+    font-weight: bold;
+    line-height: 64px;
+    text-align: center;
+    margin-top: 45px;
+}
+
+hr{
+    width: 5%;
+    margin: 25px auto 0 auto; /*permet de centrer le hr*/
+    margin-top: 25px;
+    border: 2px solid #7241FF;
+    border-radius: 5px;
+}
+
+.dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 350px;
+    height: 280px;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 10px 0 4px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+      border-radius: 12px;
+    border: 2px solid #7241FF;
+}
+
+.card i{
+font-size: 42px;
+color: #7241FF;
+margin-bottom: 20px;
+}
+
+.card h3{
+    font-size: 25px;
+    color: #7241FF;
+    margin-bottom: 15px;
+}
+
+/* section portfolio */
+
+.boutons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    gap: 20px;
+}
+
+.boutons button{
+    padding: 15px 22px;
+    border-radius: 25px;
+    border: 2px solid #7241FF;
+    background-color: white;
+    color: #7241FF;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer; 
+}
+
+.boutons button:hover{
+    background-color: #7241FF;
+    color: white;
+}
+
+.btn-t button{
+    border: none;
+    background-color: #7241FF;
+    color: white;
+    transition: 0.3s ease;
+}
+
+ 
+
+
+/* .Portfolio-card1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.Portfolio-card{
+    width: 360px;
+    height: 400px;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 10px 0 4px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+   
+.card-top{
+    height: 100%;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #6ac5ff, #c850c0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* Conteneur des cards */
+.Portfolio-card1{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Card principale */
+.Portfolio-card{
+  width: 360px;
+  height: 400px;
+  background: white;
+  border-radius: 12px; /* coins très arrondis */
+  overflow: hidden; /* IMPORTANT pour couper le gradient */
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Partie gradient (haut seulement) */
+.Portfolio-card::before{
+  content: "";
+  display: block;
+  height: 180px; /* rectangle (plus large que haut) */
+  background: linear-gradient(
+    135deg,
+    #7241FF,
+    #c74381
+  ); /* gradient doux */
+}
+
+/* Icône */
+.Portfolio-card i{
+  font-size: 26px; /* petite icône */
+  color: white;
+  margin-top: 5px;; /* pour la centrer dans le gradient */
+  background: #4a5cff;
+  /* padding: 14px; */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Titres */
+.Portfolio-card h3{
+  margin: 25 auto;
+  font-size: 18.72px;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+/* Texte */
+.Portfolio-card p{
+  font-size: 16px;
+  color: #334155;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+/* Boutons */
+.Portfolio-card button{
+  background:white;
+  border: 1px solid #6366f1;
+  color: #6366f1;
+  font-size: 12px;
+  padding: 15px 22px;
+  margin: 6px 4px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Container global */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* responsive */
+}
+
+/* Colonne gauche */
+.form h3 {
+    font-size: 20px;
+    color: #6366f1;
+}
+
+.form p {
+    font-size: 16px;
+    color: #334155;
+    margin-top: 10px;
+}
+
+/* Liste contact */
+.contact-list {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.contact-title{
+    /* font-weight: bold; */
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-info i {
+    width: 36px;
+    height: 36px;
+    background: #eef2ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #6366f1;
+}
+
+/* Colonne droite : formulaire */
+.formulaire form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.formulaire{
+    flex: 1; /*prend tout la place disponible*/
+    min-width: 300px; /*largeur minimuin sur mobile*/
+} 
+
+.formulaire form label {
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.formulaire form input,
+.formulaire select,
+.formulaire textarea {
+    width: 100%;          /* occupe tout l’espace disponible du parent */
+    max-width: 550px;     /* augmente la longueur maximale */
+    font-size: 16px;
+    color: #334155;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 10px 0 4px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.formulaire select{
+    color: #7241FF;
+}
+textarea {
+    padding: 20px 25px;
+    /* resize: vertical; */
+    max-width: 700px; /* plus large pour le message */
+    height: 140px;
+}
+
+/* Hover */
+.formulaire form input:hover,
+.formulaire select:hover,
+.formulaire textarea:hover {
+    border: 2px solid #7241FF;
+}
+
+/* Bouton */
+.formulaire button {
+    width: 100%;
+    max-width: 550px;
+    padding: 10px 15px;
+    color: white;
+    background: #7241FF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulaire button:hover {
+    background: #5a2edb;
+}
+
+/* Responsive : mobile */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .formulaire form input,
+    .formulaire select,
+    .formulaire textarea {
+        max-width: 100%; /* prend toute la largeur sur mobile */
+    }
+
+    textarea {
+        max-width: 100%;
+    }
+}
+
+.footer{
+    background: #1e2a44;
+    height: 120px;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #7241FF;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons a{
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-icons a:hover{
+    transform: translateY(-4px);
+    color: #6c8cff;
+    text-decoration: underline;
+}
+
+
