@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <!-- 1. Ajoutez la balise meta viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> TechVision </title>
+  <!-- 3. Ajoutez le CSS Bootstrap et Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <style>
+    body{
+      background-color:#F8F9FA;
+    }
+  </style>
+</head>
+<body>
+    <!-- 4. Créez votre site web responsive -->
+     <!-- SECTION NAVBAR -->
+         <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+            <!-- <i class="bi bi-lightning-charge-fill text-primary fs-3 me-2"></i> -->
+            <a href="" class="navbar-brand text-primary fw-bold fs-3 ">
+              <i class="bi bi-lightning-charge-fill text-primary fs-3 me-2"></i>TechVision
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary sfw-bold">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary fw-bold">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary fw-bold">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary fw-bold">Equipe</a>
+                        </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary fw-bold">Tarifs</a>
+                        </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary fw-bold">Contact</a>
+                        </li>
+                    </ul>
+                        <button type="submit" class="btn btn-primary btn-md btn-transform rounded-5 ms-2 ">Démarrer</button>
+
+            </div>
+        </div>
+   </nav>
+            <!-- SECTION HERO -->
+
+<header class="position-relative text-white "style="background-image:url('img/background-imge.avif');
+          background-size:cover;background-position:center;height:100vh;
+          background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('img/background-imge.avif')center/cover
+          no-repeat;min-height:100vh;overflow: hidden;position: relative;" >
+
+  <div class="overlay position-absolute top-0 start-0  w-100 h-100" 
+        style="background-color:rgba(0,0,0,0.7); z-index: 1;">
+
+            <div class="container mt-1 z-index-1" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                <h1 class="fw-bold text-light display-1 ">Transformez vos <br>idées en 
+                  réalité <br>digitale</h1>
+                <p class="text-light fs-4 mt-1 text-center">Des solutions web innovantes pour propulser 
+                votre entreprise vers le <br>futur</p>
+                  <div class="d-flex  flex-column flex-md-row gap-4 mt-0">
+                      <button type="button" class="btn btn-lg me-3 rounded-5 bg-white px-4 py-2 text-dark border-0"><i class="bi bi-rocket-takeoff"></i>
+                        Découvrir nos Services</button>
+                      <button type="button" class="btn btn-lg text-white rounded-5 px-4 py-2 bg-transparent border-white"><i class="bi bi-fast-forward-circle"></i>
+                        voir la Démo</button>
+                  </div>
+                        <div class="container my-5 d-none d-md-block d-lg-block">
+                          <div class="row text-center">
+                            <!-- colonne 1 -->
+                            <div class="col-md-4 mb-1">
+                              <div class="p-3 border-0 bg-dark rounded">
+                                <h2>500+</h2>
+                                <p class="text-uppercase">Projets réalisés</p>
+                              </div>
+                            </div>
+                            <!-- colonne 2 -->
+                            <div class="col-md-4 mb-1">
+                              <div class="p-3 border-0 bg-secondary rounded">
+                                <h2>98%</h2>
+                                <p class="text-uppercase">Clients satisfaits</p>
+                              </div>
+                            </div>
+                            <!-- colonne 3 -->
+                            <div class="col-md-4 mb-1">
+                              <div class="p-3 border-0 bg-dark rounded">
+                                <h2>15+</h2>
+                                <p class="text-uppercase">Années d'expérience</p>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>         
+  </div>  
+</header>
+
+          <main>
+                  <!-- SECTION SERVICES -->
+              <div class="container mt-5 d-flex justify-content-center align-items-center flex-column">
+                <h1 class="display-3 fw-bold">Nos Services</h1>
+                <hr class="p-5 text-primary m-1" style="border-top: 4px solid slateblue; opacity: 1;">
+                <p class="position-relave text-muted fs-5" style="margin-top: -80px;">Des solutions sur mesure pour tous vos besoins digitaux</p>
+              </div>
+                
+                      <div class="container my-5 d-md-block d-lg-block">
+                        <div class="row text-center mt-4">
+                            <!-- colonne 1 -->
+                            <div class="col-md-4 mb-3">
+                              <div class="p-3 border-0 bg-white rounded">
+                                <i class="bi bi-code-slash bg-info text-primary display-4  p-3 " style="border-radius: 50%;"></i>
+                                <h3 class="mt-3">Développement Web</h3>
+                                <p class="mt-3 text-muted">Création de sites web modernes, responsives et
+                                   performants avec les dernières technologies.</p>
+                                   <ul class="list-unstyled text-start mt-2">
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3">Sites vitrines</span>
+                                      </li>
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3">E-Commerce</span>
+                                      </li>                                
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3">Applications web</span>
+                                      </li>
+                                   </ul>
+                                   <button class="btn btn-primary btn-sm rounded-5 w-100">En savoir plus</button>
+                              </div>
+                            </div>
+                            <!-- colonne 2 -->
+                            <div class="col-md-4 mb-3">
+                              <div class="p-3 border-0 bg-white rounded">
+                                <i class="bi bi-phone text-success bg-info display-4 p-3 mt-3" style="border-radius: 50%;"></i>
+                                <h3 class="mt-3">Applications Mobiles</h3>
+                                <p class="text-muted mt-3">Développement d'applications iOS et Android natives
+                                   et cross-platform performantes.</p>
+                                   <ul class="list-unstyled text-start mt-2">
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3">iOS & Android</span>
+                                      </li>
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3">React Native</span>
+                                      </li>
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3">Flutter</span>
+                                      </li>
+                                   </ul>
+                                <button class="btn btn-outline-success btn-sm w-100  rounded-5">En savoir plus</button>
+                              </div>
+                            </div>
+                            <!-- colonne 3 -->
+                            <div class="col-md-4 mb-3">
+                              <div class="p-3 border-0 bg-white rounded">
+                                <i class="bi bi-palette text-warning  display-4 p-3" 
+                                    style="background-color: rgb(252, 225, 173); border-radius: 50%;">
+                                </i>
+                                <h3 class="mt-3">Design UI/UX</h3>
+                                <p class="mt-3 text-muted">Conception d'interfaces utilisateur intuitives
+                                   et expériences utilisateur mémorables.</p>
+                                   <ul class="list-unstyled text-start mt-2">
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                       <span class="ms-3"> Wireframing</span>
+                                      </li>
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                       <span class="ms-3"> Prototypage</span>
+                                      </li>
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3"> Tests utilisateurs</span>
+                                      </li>
+                                   </ul>
+                                <button class="btn btn-outline-warning btn-sm rounded-5 w-100">En savoir plus</button>
+                              </div>
+                            </div>
+                            <!-- colonne 4 -->
+                            <div class="col-md-4 mb-3">
+                              <div class="p-3 border-0 bg-white rounded">
+                                <i class="bi bi-cloud text-info display-4 p-3 "
+                                  style="background-color: rgb(171, 191, 240);border-radius: 50%;margin-top: 20px;" ></i>
+                                <h3 class="mt-4">Cloud & DevOps</h3>
+                                <p class="mt-3 text-muted">Déploiement et gestion d'infrastructures 
+                                  cloud sécurisées et évolutives.</p>
+                                  <ul class="list-unstyled text-start mt-2">
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3">AWS & Azure</span>
+                                      </li>
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3">CI/CD</span>
+                                      </li>
+                                      <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <span class="ms-3">Monitoring</span>
+                                      </li>
+                                  </ul>
+                                <button class="btn btn-outline-info btn-sm  rounded-5 w-100">En savoir plus</button>
+                              </div>
+                            </div>
+                            <!-- colonne 5 -->
+                            <div class="col-md-4 mb-3">
+                              <div class="p-3 border-0 bg-white rounded">
+                                <i class="bi bi-shield-check text-danger display-4  p-3"
+                                    style=" border-radius: 50%; margin-top: 40px;background-color: rgb(242, 165, 165);"></i>
+                                <h3 class="mt-4">Cybersécurité</h3>
+                                <p class="mt-3 text-muted">Protection de vos données et systèmes contre 
+                                  les menaces cybernétiques modernes.</p>
+                                  <ul class="list-unstyled text-start mt-2">
+                                    <li class="d-flex align-items-center">
+                                      <i class="bi bi-check-circle-fill text-success"></i>
+                                      <span class="ms-3"> Audit sécurité</span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                      <i class="bi bi-check-circle-fill text-success"></i>
+                                      <span class="ms-3">Pentesting</span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                      <i class="bi bi-check-circle-fill text-success"></i>
+                                      <span class="ms-3">Formation</span>
+                                    </li>
+                                  </ul>
+                                <button class="btn btn-outline-danger btn-sm rounded-5 w-100">En savoir plus</button>
+                              </div>
+                            </div>
+                            <!-- colonne 6 -->
+                            <div class="col-md-4 mb-3">
+                              <div class="p-3 border-0 bg-white rounded">
+                                <i class="bi bi-graph-up text-dark bg-light display-4 p-3"
+                                  style="border-radius: 50%;">
+                                </i>
+                                <h3 class="mt-4">Data Analytics</h3>
+                                <p class="mt-3 text-muted">Analyse de données avancée pour des décisions 
+                                  business éclairées et stratégiques.</p>
+                                  <ul class="list-unstyled text-start mt-2">
+                                    <li class="d-flex align-items-center">
+                                      <i class="bi bi-check-circle-fill text-success"></i>
+                                      <span class="ms-3">Big Data</span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                      <i class="bi bi-check-circle-fill text-success"></i>
+                                      <span class="ms-3">Machine Learning</span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                      <i class="bi bi-check-circle-fill text-success"></i>
+                                      <span class="ms-3">Dashboards</span>
+                                    </li>
+                                  </ul>
+                                <button class="btn btn-outline-dark btn-sm rounded-5 w-100">En savoir plus</button>
+                              </div> 
+                            </div>
+
+                        </div>
+                      </div>
+          </main>
+ 
+  <!-- 5. Ajoutez le JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
